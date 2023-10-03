@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="module" src="out/cdb.js"></script>
+    <script type="module" src="out/pngencryption.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="encoding">
+    <h1>Encoding</h1>
+    <p>Input your text in the field below and click the 'Encode' button to generate an image. You can then download the
+        image using the right-click context menu.</p>
+    <textarea maxlength="65024" placeholder="Your input"></textarea>
+    <button>
+        <span>Encode</span>
+    </button>
+    <div>
+        <span class="min">0</span>/<span class="max">0</span>
+    </div>
+    <canvas></canvas>
+</div>
+<div id="decoding">
+    <h1>Decoding</h1>
+    <p>Upload an image file using the input field, then click the 'Decode' button.</p>
+    <input type="file">
+    <button>
+        <span>Decode</span>
+    </button>
+    <div>
+        <span class="min">0</span>/<span class="max">0</span>
+    </div>
+    <canvas></canvas>
+    <textarea maxlength="65024" placeholder="Your output"></textarea>
+</div>
+</body>
+</html>
